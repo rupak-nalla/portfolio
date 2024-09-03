@@ -70,7 +70,7 @@ export default function Home() {
               <Image src={myImage} alt=""></Image>
             </div>
           </div>
-          
+          <div></div>
         </div>
         
       </div>
