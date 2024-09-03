@@ -13,6 +13,12 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        'regal-blue': '#1400FF',
+      },
+      borderRadius: {
+        'custom': '25% 63% 75% 19% / 25% 45% 52% 75%',  // Add your custom radius here
+      },
     },
   },
   plugins: [],

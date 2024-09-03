@@ -31,3 +31,7 @@ body {
     text-wrap: balance;
   }
 }
+.blend-hard-light {
+  @apply bg-black opacity-50; /* Example Tailwind classes */
+  background-blend-mode: hard-light;
+}
