@@ -13,7 +13,6 @@ export default function Home() {
     const [firstVisible, setFirstVisible] = useState(false);
     const [secondVisible, setSecondVisible] = useState(false);
     
-    
     useEffect(() => {
         const firstTimer = setTimeout(() => {
             setFirstVisible(true);
@@ -50,7 +49,7 @@ export default function Home() {
               </ul>
             </div>
           </nav>
-          <div className={`fixed top-1/2 left-0 transform -translate-y-1/2 p-4 shadow-md transition-transform duration-700 ease-in-out ${firstVisible ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0' }`}>
+          <div className={`absolute top-1/2 left-0 transform -translate-y-1/2 p-4 shadow-md transition-transform duration-700 ease-in-out ${firstVisible ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0' }`}>
               <div className={`transition-transform duration-700 delay-200 ${firstVisible ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'}`}>
                   <h1 className="text-4xl px-5">Hello there,</h1>
               </div>
@@ -61,7 +60,7 @@ export default function Home() {
                 <h1 className="text-2xl px-5 text-[#1400FF]">{jobTitle[0]}<Cursor/></h1>
               </div>
           </div>
-          <div className="rounded-custom fixed top-1/2 right-0 transform -translate-y-1/2 p-10 shadow-md">
+          <div className="rounded-custom absolute top-1/2 right-0 transform -translate-y-1/2 p-10 shadow-md">
             <div
               className={`transition-transform duration-700 delay-200 ${
                 firstVisible ? 'translate-x-0 opacity-100' : 'translate-x-[200%] opacity-0'
@@ -70,8 +69,8 @@ export default function Home() {
               <Image src={myImage} alt=""></Image>
             </div>
           </div>
-          <div></div>
         </div>
+          <div className="h-screen"></div>
         
       </div>
     </main>
