@@ -14,7 +14,7 @@
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.5.0",
     "aos": "^2.3.4",
-    "next": "14.2.7",
+    "next": "14.2.17",
     "react": "^18",
     "react-dom": "^18",
     "react-simple-typewriter": "^5.0.1",
