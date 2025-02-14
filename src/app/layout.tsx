@@ -5,8 +5,10 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Rupak Nalla",
+  title: "Rupak Nalla"
+  
 };
+
 
 export default function RootLayout({
   children,
@@ -14,8 +16,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" >
+      <head>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+      </head>
+      <body className={inter.className} >{children}</body>
     </html>
   );
 }
