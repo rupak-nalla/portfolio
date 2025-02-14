@@ -24,7 +24,7 @@ interface Project {
 }
 
 
-const WebProjectCard = ({ title, description, githubLink, demoLink, technologies, imageVar }) => (
+const WebProjectCard: React.FC<Project> = ({ title, description, githubLink, demoLink, technologies, imageVar }) => (
   <div className="group relative rounded-xl overflow-hidden border border-gray-800 bg-gray-900/50 backdrop-blur-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-blue-500/10 flex flex-col h-full">
     <div className="relative h-48 overflow-hidden">
       <Image 
@@ -73,56 +73,7 @@ const WebProjectCard = ({ title, description, githubLink, demoLink, technologies
     </div>
   </div>
 );
-// const MLProjectCard = ({ title, description, githubLink, demoLink, technologies, imageVar }) => (
-//   <div className="group relative rounded-xl overflow-hidden border border-gray-800 bg-gray-900/50 backdrop-blur-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-blue-500/10 flex flex-col h-full">
-//     <div className="relative h-48 overflow-hidden">
-//       <Image 
-//         className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110" 
-//         src={imageVar}
-//         alt={title}
-//       />
-//       <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/50 to-transparent" />
-//     </div>
-    
-//     <div className="p-6 relative z-10 flex flex-col flex-grow">
-//       <div className="flex-grow">
-//         <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">{title}</h3>
-//         <p className="text-gray-300 text-sm mb-4 line-clamp-3">{description}</p>
-        
-//         <div className="mb-6">
-//           <h4 className="text-blue-400 text-sm font-semibold mb-2">Technologies</h4>
-//           <div className="flex flex-wrap gap-2">
-//             {technologies.split(',').map((tech, index) => (
-//               <span key={index} className="px-2 py-1 text-xs bg-gray-800/50 backdrop-blur-sm text-blue-300 rounded-full border border-gray-700">
-//                 {tech.trim()}
-//               </span>
-//             ))}
-//           </div>
-//         </div>
-//       </div>
-
-//       <div className="flex gap-4 mt-auto">
-//         <a
-//           href={githubLink}
-//           className="flex items-center gap-2 px-4 py-2 bg-gray-800/50 backdrop-blur-sm text-white rounded-lg hover:bg-gray-700 transition-colors"
-//         >
-//           <Github size={16} />
-//           GitHub
-//         </a>
-//         {demoLink && (
-//           <a
-//             href={demoLink}
-//             className="flex items-center gap-2 px-4 py-2 bg-blue-600/80 backdrop-blur-sm text-white rounded-lg hover:bg-blue-700 transition-colors"
-//           >
-//             <ExternalLink size={16} />
-//             Live Demo
-//           </a>
-//         )}
-//       </div>
-//     </div>
-//   </div>
-// );
-const MLProjectCard = ({ title, description, githubLink, demoLink, technologies, imageVar }) => (
+const MLProjectCard: React.FC<Project> = ({ title, description, githubLink, demoLink, technologies, imageVar }) => (
   <div className="group relative rounded-xl overflow-hidden border border-gray-800 bg-gray-900/50 backdrop-blur-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-yellow-500/20 flex flex-col h-full">
     <div className="relative h-48 overflow-hidden">
       <Image 

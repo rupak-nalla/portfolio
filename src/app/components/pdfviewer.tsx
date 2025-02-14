@@ -34,24 +34,19 @@ const PdfViewer: React.FC<PdfViewerProps> = ({ fileUrl, className }) => {
 
       <Worker workerUrl="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js">
         <div className="w-full h-full">
-          <Viewer
-            fileUrl={fileUrl}
-            defaultScale={SpecialZoomLevel.PageFit}
-            plugins={[
-              defaultLayoutPluginInstance,
-              zoomPluginInstance,
-            ]}
-            onDocumentLoad={() => setIsLoading(false)}
-            theme={{
-              theme: 'dark',
-              viewer: {
-                background: 'rgba(0, 0, 0, 0.1)',
-              },
-              toolbar: {
-                backgroundColor: 'rgba(0, 0, 0, 0.1)',
-              },
-            }}
-          />
+        <Viewer
+  fileUrl={fileUrl}
+  defaultScale={SpecialZoomLevel.PageFit}
+  plugins={[
+    defaultLayoutPluginInstance,
+    zoomPluginInstance,
+  ]}
+  onDocumentLoad={() => setIsLoading(false)}
+  theme={{
+    theme: 'dark',
+  }}
+/>
+
         </div>
       </Worker>
     </div>
