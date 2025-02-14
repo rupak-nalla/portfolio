@@ -65,7 +65,7 @@ export default function Resume() {
                     {/* Download Button */}
                     <div className="flex justify-center">
                         <a
-                            href="/images/resume.pdf"
+                            href="/images/Rupak-Nalla.pdf"
                             download="Rupak_Nalla_Resume"
                             className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors duration-200 focus:ring-4 focus:ring-blue-300 focus:outline-none"
                         >
@@ -83,7 +83,7 @@ export default function Resume() {
                                 minHeight: '500px'
                             }}
                         >
-                            <PdfViewer fileUrl="/images/resume.pdf" />
+                            <PdfViewer fileUrl="/images/Rupak-Nalla.pdf" />
                         </div>
                         
                         {/* Overlay gradient for better visibility */}
