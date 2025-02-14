@@ -233,15 +233,15 @@ export default function Home() {
                                     <span className="text-blue-400"> full-stack applications</span> and <span className="text-blue-400">AI</span>
                                 </p>
                                 <p>
-                                    I'm fluent in frontend technologies like
+                                    I&apos;m fluent in frontend technologies like
                                     <span className="text-blue-400"> JavaScript, Next.js ,Vue.js, and React.js.</span>
                                 </p>
                                 <p>
-                                    I'm also fluent in backend technologies
+                                    I&apos;m also fluent in backend technologies
                                     <span className="text-blue-400"> Flask and Express.js</span>
                                 </p>
                                 <p>
-                                  I’m currently pursuing a <span className="text-blue-400">B.Tech in CSE from JNTUH Manthani</span> and a<span className="text-blue-400"> BS in Data Science from IIT Madras</span> with experience in <span className="text-blue-400">Machine Learning, Deep Learning, and Natural Language Processing</span>.
+                                  I&apos;m currently pursuing a <span className="text-blue-400">B.Tech in CSE from JNTUH Manthani</span> and a<span className="text-blue-400"> BS in Data Science from IIT Madras</span> with experience in <span className="text-blue-400">Machine Learning, Deep Learning, and Natural Language Processing</span>.
                                 </p>
                                 <p>
                                     I cherish the art of transforming ideas into vibrant digital experiences,
