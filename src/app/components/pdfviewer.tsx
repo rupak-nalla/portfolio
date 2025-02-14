@@ -1,23 +1,4 @@
-// "use client";
 
-// import { Viewer, Worker } from "@react-pdf-viewer/core";
-// import "@react-pdf-viewer/core/lib/styles/index.css";
-
-// interface PdfViewerProps {
-//   fileUrl: string;
-// }
-
-// const PdfViewer: React.FC<PdfViewerProps> = ({ fileUrl }) => {
-//   return (
-//     <div className="w-full h-screen">
-//       <Worker workerUrl={`https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js`}>
-//         <Viewer fileUrl={fileUrl} />
-//       </Worker>
-//     </div>
-//   );
-// };
-
-// export default PdfViewer;
 "use client";
 import { useState } from 'react';
 import { Viewer, Worker, SpecialZoomLevel } from "@react-pdf-viewer/core";
