@@ -1,4 +1,3 @@
-
 "use client"
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -33,12 +32,10 @@ export default function Home() {
 
     return (
         <main className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <NavBar />
-                
+            <NavBar />
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 lg:pt-5">
                 {/* Hero Section */}
-                
-                <section className="min-h-screen flex flex-col md:flex-row items-center justify-center gap-8 py-20">
+                <section className="min-h-screen flex flex-col md:flex-row items-center justify-center gap-8 relative">
                     <div className={`space-y-6 transition-all duration-1000 ${
                         visible ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'
                     }`}>
@@ -60,7 +57,7 @@ export default function Home() {
                     <div className={`transition-all duration-1000 ${
                         visible ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
                     }`}>
-                        <div className="relative w-65 h-65 md:w-[30rem] md:h-[30rem] animate-float">
+                        <div className="relative w-64 h-64 md:w-[30rem] md:h-[30rem] animate-float">
                             <Image 
                                 src="/images/971.png"
                                 alt="Hero image"
@@ -73,7 +70,7 @@ export default function Home() {
                 </section>
 
                 {/* About Section */}
-                <section className="min-h-screen py-20">
+                <section className="min-h-screen py-20" id="about">
                     <div className="flex flex-col md:flex-row items-center gap-12">
                         <div data-aos="fade-right" className="w-full md:w-3/5 space-y-6">
                             <h3 className="text-2xl md:text-3xl font-bold text-center">
@@ -81,19 +78,21 @@ export default function Home() {
                             </h3>
                             <div className="space-y-4 text-lg text-center">
                                 <p>
-                                My coding journey began with my first HTML tag at an early age, evolving into a passion for
+                                    My coding journey began with my first HTML tag at an early age, evolving into a passion for
                                     <span className="text-blue-400"> full-stack applications</span> and <span className="text-blue-400">AI</span>
                                 </p>
                                 <p>
                                     I&apos;m fluent in frontend technologies like
-                                    <span className="text-blue-400"> JavaScript, Next.js ,Vue.js, and React.js.</span>
+                                    <span className="text-blue-400"> JavaScript, Next.js, Vue.js, and React.js</span>
                                 </p>
                                 <p>
-                                    I&apos;m also fluent in backend technologies
+                                    I&apos;m also proficient in backend technologies like
                                     <span className="text-blue-400"> Flask and Express.js</span>
                                 </p>
                                 <p>
-                                  I&apos;m currently pursuing a <span className="text-blue-400">B.Tech in CSE from JNTUH Manthani</span> and a<span className="text-blue-400"> BS in Data Science from IIT Madras</span> with experience in <span className="text-blue-400">Machine Learning, Deep Learning, and Natural Language Processing</span>.
+                                    I&apos;m currently pursuing a <span className="text-blue-400">B.Tech in CSE from JNTUH Manthani</span> and a
+                                    <span className="text-blue-400"> BS in Data Science from IIT Madras</span> with experience in 
+                                    <span className="text-blue-400"> Machine Learning, Deep Learning, and Natural Language Processing</span>.
                                 </p>
                                 <p>
                                     I cherish the art of transforming ideas into vibrant digital experiences,
@@ -116,7 +115,7 @@ export default function Home() {
                 </section>
 
                 {/* Contact Section */}
-                <section className="py-20">
+                <section className="py-20" id="contact">
                     <div className="text-center space-y-8">
                         <h3 className="text-2xl md:text-3xl font-bold text-blue-400">
                             FIND ME ON
@@ -140,7 +139,7 @@ export default function Home() {
                             </a>
                         </div>
                         <p className="text-lg">
-                            feel free to <span className="text-blue-400">connect</span>
+                            Feel free to <span className="text-blue-400">connect</span>
                         </p>
                     </div>
                 </section>
@@ -172,6 +171,8 @@ export default function Home() {
                     </div>
                 </footer>
             </div>
+
+            {/* Global Styles */}
             <style jsx global>{`
                 @keyframes float {
                     0% {
