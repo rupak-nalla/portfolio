@@ -26,19 +26,17 @@ export default function Home() {
     }, []);
 
     const [text] = useTypewriter({
-        words: ["Software Developer", "MERN Stack Developer"],
+        words: ["Software Developer", "MERN Stack Developer","AI Enthusiast"],
         loop: true,
     });
 
     return (
-        <main className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white">
+        <main className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white overflow-x-hidden">
             <NavBar />
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 lg:pt-5">
                 {/* Hero Section */}
                 <section className="min-h-screen flex flex-col md:flex-row items-center justify-center gap-8 relative">
-                    <div className={`space-y-6 transition-all duration-1000 ${
-                        visible ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'
-                    }`}>
+                    <div data-aos="fade-right" className="transition-all duration-1000">
                         <div className="space-y-2">
                             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold">
                                 Hello there,
@@ -54,9 +52,7 @@ export default function Home() {
                         </h2>
                     </div>
                     
-                    <div className={`transition-all duration-1000 ${
-                        visible ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
-                    }`}>
+                    <div data-aos="fade-left" className="transition-all duration-1000">
                         <div className="relative w-64 h-64 md:w-[30rem] md:h-[30rem] animate-float">
                             <Image 
                                 src="/images/971.png"
@@ -189,6 +185,7 @@ export default function Home() {
                 .animate-float {
                     animation: float 3s ease-in-out infinite;
                 }
+                
             `}</style>
         </main>
     );

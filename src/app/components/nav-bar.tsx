@@ -3,14 +3,17 @@ import { useState, useEffect } from "react";
 import { Home, Code, FileText, Menu, X } from 'lucide-react';
 import AOS from "aos";
 import 'aos/dist/aos.css';
+
 export default function NavBar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [visible, setVisible] = useState(false);
+    
     useEffect(() => {
-            setVisible(true);
-            AOS.init({ once: true });
-        }, []);
+        setVisible(true);
+        AOS.init({ once: true });
+    }, []);
+    
     const handleScroll = () => {
         if (window.scrollY > 0) {
             setIsScrolled(true);
@@ -33,9 +36,9 @@ export default function NavBar() {
 
     return (
         <>
-            <nav data-aos="slide-down" className="fixed top-0 left-0 w-screen z-50  border-gray-800">
+            <nav data-aos="slide-down" className="fixed top-0 left-0 w-screen z-50 border-gray-800">
                 <div className={`w-full transition-colors duration-300 ${
-                    isScrolled ? 'bg-gray-900/75 backdrop-blur-md' : 'bg-transparent'
+                    isScrolled || isMobileMenuOpen ? 'bg-gray-900/75 backdrop-blur-md' : 'bg-transparent'
                 }`}>
                     <div className="max-w-7xl mx-auto">
                         <div className="flex items-center justify-between h-16 px-4 sm:px-6 lg:px-8">

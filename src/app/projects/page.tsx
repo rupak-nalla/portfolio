@@ -191,9 +191,9 @@ const ProjectsPage = () => {
 
   return (
     <main className="min-h-screen bg-[url('../../public/images/grid-pattern-2.png')] bg-center bg-fixed bg-cover">
+      <NavBar />
       <div className="min-h-screen bg-gradient-to-b from-black via-gray-900/90 to-black backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4">
-          <NavBar />
           
           <div className="py-20 text-center min-h-screen flex flex-col justify-center relative" >
             <div className="absolute inset-0 bg-blue-500/10 animate-pulse blur-3xl" />

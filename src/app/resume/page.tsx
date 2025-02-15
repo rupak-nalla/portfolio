@@ -1,47 +1,4 @@
-// import NavBar from "../components/nav-bar";
-// import PdfViewer from "../components/pdfviewer";
-// import { Github, ExternalLink, Linkedin } from 'lucide-react';
 
-// export default function Resume(){
-//     return (
-//         <main>
-//             <NavBar />
-//             <div className="bg-[url(/images/bg.png)] min-h-screen bg-cover bg-no-repeat">
-//                 <div className="bg-gradient-to-b from-black via-transparent to-black min-h-screen flex flex-col justify-start items-center pt-24 space-y-6">
-//                     <a 
-//                         href="/images/resume.pdf"  
-//                         className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" 
-//                         download="resume"
-//                     >
-//                         DOWNLOAD
-//                     </a>
-//                     <div className="w-full max-w-3xl bg-white shadow-lg rounded-lg overflow-hidden p-4">
-//                         <PdfViewer fileUrl="/images/resume.pdf" />
-//                     </div>
-//                 </div>
-//             </div>
-//             <footer className="border-t border-gray-800/50 backdrop-blur-sm py-8">
-//             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-//               <p className="text-gray-400">Designed and developed by Rupak Nalla</p>
-//               <div className="flex gap-4">
-//                 <a 
-//                   href="http://www.github.com/rupak-nalla" 
-//                   className="p-2 rounded-full bg-gray-800/50 hover:bg-gray-700 transition-colors border border-gray-700"
-//                 >
-//                   <Github className="text-white" size={20} />
-//                 </a>
-//                 <a 
-//                   href="https://www.linkedin.com/in/rupaknalla/" 
-//                   className="p-2 rounded-full bg-gray-800/50 hover:bg-gray-700 transition-colors border border-gray-700"
-//                 >
-//                   <Linkedin className="text-white" size={20} />
-//                 </a>
-//               </div>
-//             </div>
-//           </footer>
-//         </main>
-//     )
-// }
 "use client"
 import NavBar from "../components/nav-bar";
 import PdfViewer from "../components/pdfviewer";
@@ -50,8 +7,8 @@ import { Github, Linkedin, Download } from 'lucide-react';
 export default function Resume() {
     return (
         <main className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white">
+            <NavBar />
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <NavBar />
                 
                 <div className="py-20 space-y-8">
                     {/* Header Section */}
